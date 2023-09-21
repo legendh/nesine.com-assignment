@@ -1,0 +1,38 @@
+.coupon-main{
+    font-size: 14px;
+    position: fixed;
+    min-width: 30%;
+    bottom: 0;
+    right: 0;
+    background-color: #FFF;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.coupon-main__list{
+    margin: 0;       
+    list-style-type: none;
+    padding-left: 0;    
+    li{
+        list-style-position:inside;
+        padding:5px 0  ;
+        border-bottom: 2px solid #c0c0c0;
+
+        &:last-child{
+            margin-bottom: 5px ;
+        }
+
+        .mbs{padding-right:10px ;}
+        .match-code{padding-right: 15px;}
+        .match{padding-right: 15px;}
+        .oran{font-weight: bold;}
+    }
+
+
+}
+
+.total-coupon-amount{
+    font-size: 16px;
+}

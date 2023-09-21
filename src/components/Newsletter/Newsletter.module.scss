@@ -1,0 +1,78 @@
+$tableBorderColor: #000;
+$tableTitleBackgroundColor: #d4cbcb;
+$tableColWidth: 4.54%;
+$tableFirstColWidth: $tableColWidth * 4;
+
+.newsletter-table,
+.newsletter-table__row th,
+.newsletter-table__row td {
+  cursor:default;  
+  border: 1px solid $tableBorderColor;
+  border-collapse: separate;
+  border-spacing: 0;
+  white-space: nowrap;caret-color: #000;
+}
+
+.newsletter-table {
+  table-layout: fixed;
+  margin: auto;
+  
+  
+  thead {
+    background-color: $tableTitleBackgroundColor;    
+    .newsletter-table__title {
+      th:first-child {
+        width: $tableFirstColWidth;
+        padding: 15px 0;        
+      }
+      th {
+        top:0;
+        position: sticky;
+        background-color: $tableTitleBackgroundColor;
+        border-bottom: 1px solid $tableBorderColor;
+        width: $tableColWidth;
+        padding: 5px;              
+        text-align: center;
+      }
+    }
+  }
+  tbody {
+    tr{
+      .loading-text{
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+      }
+    }
+    .newsletter-table__row-date-league-type {
+      td:first-child {
+        width: $tableFirstColWidth;          
+        text-align: start;
+      }
+      td {        
+        width: $tableColWidth;
+        padding: 5px;      
+        text-align: center;
+      }
+    }
+    .newsletter-table__row-match-info {
+      td:first-child {        
+        width: $tableColWidth;
+        padding: 10px 5px;        
+        text-align: start;
+      }
+      td {        
+        text-align: center;
+        .match-code{
+            font-weight: bolder;
+          }
+                  
+      }
+      .active{
+        cursor: pointer;
+        background: #FEFF0C ;
+      }
+
+    }
+  }
+}
