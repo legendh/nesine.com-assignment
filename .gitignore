@@ -4,6 +4,7 @@ ehthumbs.db
 
 # Folder config file
 Desktop.ini
+dist/
 node_modules/
 bower_components/
 .idea/
